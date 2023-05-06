@@ -1,0 +1,30 @@
+/* Denna fil skall innehålla din CSS kod */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans:wght@200&family=Roboto+Mono:wght@100;500&family=Roboto+Slab:wght@300&family=Zen+Antique&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+
+
+}
+
+.video-section video{
+    height: 100vh;
+    width: 100vw;
+    object-fit:cover;
+}
+
