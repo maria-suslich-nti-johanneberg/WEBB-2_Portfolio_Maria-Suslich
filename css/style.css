@@ -28,15 +28,16 @@ body{
     top: 0;
     width: 100vw;
     border-bottom: 1px solid rgba(255, 255, 255, .1);
-
+    z-index: 1000;
 }
 
 .navbar span{
     position: absolute;
     bottom: 0;
-    height: 2px;
-    width: 50px;
+    height: 1px;
+    width: 100%;
     background: linear-gradient( 90deg , transparent , #fff);
+    animation: animate 5s infinite linear;
 }
 
 @keyframes animate {
@@ -46,7 +47,7 @@ body{
     }
     100%{
         left: 100;
-        transform: translate(-100%);
+        transform: translate( 0%);
     }
 }
 
@@ -82,11 +83,94 @@ a{
 
 /* navbar-end */
 
-
+/* video-start */
 .video-section video{
     height: 100vh;
     width: 100vw;
     object-fit:cover;
     font-weight: 100;
 }
+/* video-end */
 
+/* header img-section -start */
+
+.img-container{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.img{
+    object-fit:none;
+    height: 100%;
+    width: 100%;
+}
+
+/* header img-section -end */
+
+/* main img-section -strat */
+.section{
+    background-color: #0b00dd;
+    color: rgb(255, 255, 255);
+    padding:5rem;
+}
+
+.boxes-container{
+    display:flex;
+    flex-direction:column;
+    gap:8rem;
+}
+
+.columns{
+    display:flex;
+    gap:1.5rem;
+}
+
+.col img{
+    height: 200px;
+    width: 200px;
+    object-fit:cover;
+}
+
+.col-1{
+    display: flex;
+    gap:1.5rem;
+}
+
+   /* boxes-start */
+.box1 .col-1 img:first-child{
+    width: 150px;
+    height: 180px;
+    
+}
+.box1 .col-1 img:nth-child(2){
+    width: 380px;
+    height: 430px;
+
+}
+
+.col-3{
+    display: flex;
+    justify-content: center;
+    gap:2.5rem;
+    flex-wrap: wrap;
+}
+
+.box1  .col-3 img:first-child{
+    width: 320px;
+    height: 170px;
+    
+}
+
+.box1 .col-3 img:nth-child(2){
+    width: 150px;
+
+}
+
+.box1 .col-3 img:nth-child(3){
+    width: 200px;
+    height: 200px;
+
+}
+/* main img-section -end */
